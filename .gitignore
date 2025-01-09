@@ -1,0 +1,5 @@
+# Ignorar a pasta de ambiente virtual
+JWT/
+
+# Ignorar a pasta Test
+teste/
