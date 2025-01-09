@@ -8,7 +8,6 @@ class ValidadorDeLogin:
         self.dados_registrados = dados_registrados or []
 
     async def separar_dados(self):
-        
         usuario_nome, usuario_senha = self.dados_usuario
         registrado_nome, registrado_senha = self.dados_registrados
 
@@ -19,15 +18,13 @@ class ValidadorDeLogin:
             return False
 
         ph = PasswordHasher()
-        
-        # Usando async to run a blocking call (verify) in a non-blocking way
         try:
             # Verificação assíncrona da senha
-            asyncio.to_thread(ph.verify, registrado_senha, usuario_senha)
-            return True 
+            valid = await asyncio.to_thread(ph.verify, registrado_senha, usuario_senha)
+            
+            return valid # Retorna True se a senha for válida
         except VerifyMismatchError:
             return False
 
     async def validar_login(self):
         return await self.separar_dados()
-

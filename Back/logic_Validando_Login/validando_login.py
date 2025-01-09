@@ -44,12 +44,12 @@ class ValidandoLogin:
         """
         Executa todo o fluxo de validação do login.
         """
-        print("1")
+
         if await self.buscar_dados_no_bd() != True:  
             return False
-        print("2")
+
         if await self.validar_credenciais() != True:  
             return False
-        print("3")
+
         return [self.dados_banco["id"], self.dados_banco["credencial_JWT"]]
 

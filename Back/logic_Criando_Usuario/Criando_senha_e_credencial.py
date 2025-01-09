@@ -25,7 +25,7 @@ class CriandoSenhaeCredencial():
     
     
     def _salvandoemtxt(self):
-        relativePath = os.path.join('senha', 'senha.txt') # Lembrar de tirar esse metodo depois !
+        relativePath = os.path.join('MD/senha', 'senha.txt') # Lembrar de tirar esse metodo depois !
 
         with open (relativePath, 'w') as file:
             file.write(self.senha)

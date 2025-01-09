@@ -18,7 +18,8 @@ class EncriptandoSenhaeCredencial():
         self.hash_credencial = await asyncio.to_thread(self.ph.hash, self.credencial)
     
     def _armazenandoSenhaEcredencialhashsParaUso(self):
-        return [self.senha, self.hash_credencial]
+
+        return [self.hash_senha, self.hash_credencial]
 
 
 
