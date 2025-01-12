@@ -1,0 +1,2 @@
+from Back.routes.Rota_ValidandoLogin import RoutValidandoLogin
+from Back.routes.Rota_criar_novo_usuario import RoutCriandoNovoUsuario
