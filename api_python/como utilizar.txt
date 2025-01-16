@@ -1,0 +1,3 @@
+1 - Certifique de ter o python instalado,utilize o comando py.
+2 - No seu terminal acesse a pasta MD e utilize o comando py -m pip install -g requirements.txt,para versões um pouco mais antiga do python utilize o comando pip install -g requirements.txt
+3 - Se a instalação ocorre tudo bem acesse a pasta API e utilize o comando py main.py e o servidor irá roda na porta localhost:8000

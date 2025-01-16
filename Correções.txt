@@ -1,0 +1,23 @@
+Api Python {
+    - Na api python precisamos ajeitar um serie de coisas 
+
+    1 - Senha do banco de dados: A senha salva no database não é a mesma que o usuário utilizou para se registrar,isso irá nós da um belo de um problema na hora do usuário fazer seu login
+    
+    2 - Registro: Quando o usuário se registra na rota auth/register/user (POST) a rota está apenas utilizando o username do usuário para cadastro e a senha não está sendo passada no corpo da requisição,mas quando olhamos o banco de dados uma "senha" é salva o que indica que essa senha salva no database não é a senha do usuário e sim algum outro hash indepedente.
+
+    3 - A rota auth/login (POST) não está funcionando como esperando.
+
+    Correções {
+        1 - O registro precisava retorna o JWT do usuário junto com seu ID,isso foi corrigido.
+    }
+
+    Por favor deixe suas argumentações no servidor do discord para melhor entedimento do código. :D
+
+    Até o momento é apenas isso.
+}
+
+Api Nodejs {
+    1 - Api nodejs é mini-servidor para impedir a conexão direta com o servidor python e com o banco de dados. Até o momento a api nodejs está completamente dependente do servidor python,não podemos trabalhar nela sem as correções do servidor python.
+}
+
+Qualquer dúvida nós falaremos no discord.

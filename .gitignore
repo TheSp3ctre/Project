@@ -3,3 +3,5 @@ JWT/
 
 # Ignorar a pasta Test
 teste/
+
+api_nodejs/node_modules

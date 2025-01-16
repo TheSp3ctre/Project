@@ -1,0 +1,6 @@
+1 - Primeiro certifique que você tem o nodejs instalando em sua maquina,use o comando node -v no terminal 
+2 - Utilize npm install para instalar todas as dependencia que a api está utilizando.
+3 - utilize o comando npm start para roda o servidor na porta 8080 
+4 - Qualquer erro inesperado contate o programador alvinho.
+
+Essa api será responsável por fazer a requisição na api python.Sua principal utilizade é melhorar a validação e sanitização dos dados impedido ataque XSS,SQL injection e autenticação multipas vezes,ataque de brute force entre outros.
